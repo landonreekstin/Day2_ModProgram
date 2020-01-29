@@ -3,9 +3,27 @@
 
 #include <iostream>
 
+
+int GetMinValue(int valueA, int valueB)
+{
+    if (valueA < valueB) {
+        return valueA;
+    }
+    else {
+        return valueB;
+    }
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+ //   std::cout << "Hello World!\n";
+
+    int a = 400;
+
+    int b = 200;
+
+    std::cout << "Min Value: " << GetMinValue(a, b) << "\n";
+
 
 }
 
